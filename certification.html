@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>certificate</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100%;
+        background-color: black;
+      }
+      .tex span {
+        color: orange;
+        font-size: 5vw;
+      }
+      .container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        position: relative;
+        top: 143px;
+        flex-wrap: wrap;
+      }
+      .tex {
+        color: #fff;
+        height: 2cm;
+        width: 6cm;
+        position: relative;
+        left: 1cm;
+        top: 50px;
+      }
+      .certi {
+        display: grid;
+        justify-content: center;
+        height: -13cm;
+        width: 45vw;
+        color: #fff;
+        border-radius: 10px;
+        background-color: transparent;
+        object-fit: cover;
+      }
+      .certi img {
+        width: 100%;
+        height: auto;
+      }
+      .certi h1 {
+        position: relative;
+        padding: 0px 50px;
+      }
+      .certi span {
+        color: rgb(171, 135, 173);
+      }
+      @media (max-width: 500px) {
+        .centi {
+          height: 10cm;
+        }
+        .certi:nth-child(2),
+        .certi:nth-child(3),
+        .certi:nth-child(6),
+        .certi:nth-child(7) {
+          font-size: 2vw;
+          height: 5cm;
+          position: relative;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tex">
+      <h1><span>C</span>ertificates :</h1>
+    </div>
+    <div class="container">
+      <div class="certi">
+        <img src="c.png" />
+      </div>
+      <div class="certi">
+        <h1>
+          Certificate of Completing <span> C </span>program issued by
+          <span style="color: rgb(254, 174, 26)">infosys</span>
+        </h1>
+      </div>
+      <div class="certi">
+        <h1>
+          Certificate of Completing <span>javascript </span>issued by
+          <span style="color: rgb(254, 174, 26)">hackerrank</span>
+        </h1>
+      </div>
+      <div class="certi">
+        <img onclick="js()" src="JAVASCRIPT.jpg" />
+      </div>
+      <div class="certi">
+        <img src="FRONT END.png" />
+      </div>
+      <div class="certi">
+        <h1>
+          Certificate of Completing <span>frontend </span>program issued by
+          <span style="color: rgb(254, 174, 26)">great learning</span>
+        </h1>
+      </div>
+      <div class="certi">
+        <h1>
+          Certificate of Completing <span> CSS </span>program issued by
+          <span style="color: rgb(254, 174, 26)">hackerrank</span>
+        </h1>
+      </div>
+      <div class="certi">
+        <img onclick="img()" src="css.png" />
+      </div>
+    </div>
+    <script>
+      function img() {
+        window.open("https://www.hackerrank.com/certificates/be2923ee3a99");
+      }
+      function js() {
+        window.open("https://www.hackerrank.com/certificates/f0ddc0faffa3");
+      }
+    </script>
+  </body>
+</html>

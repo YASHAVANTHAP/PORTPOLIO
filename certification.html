@@ -47,27 +47,41 @@
       }
       .certi img {
         width: 100%;
+        margin-left: 10px;
         height: auto;
       }
       .certi h1 {
         position: relative;
-        padding: 0px 50px;
+        text-align: center;
+        padding: 0px 30px;
       }
       .certi span {
         color: rgb(171, 135, 173);
+      }
+      @media (min-width: 1001px) {
+        .certi h1 {
+          margin-top: 20%;
+        }
+        .certi {
+          position: relative;
+          right: -60px;
+        }
       }
       @media (max-width: 500px) {
         .centi {
           height: 10cm;
         }
+        .tex span {
+          font-size: 35px;
+        }
         .certi:nth-child(2),
         .certi:nth-child(3),
         .certi:nth-child(6),
-        .certi:nth-child(7) {
+        .certi:nth-child(7),
+        .certi:nth-child(10) {
           font-size: 2vw;
           height: 5cm;
           position: relative;
-          text-align: center;
         }
       }
     </style>
@@ -88,12 +102,13 @@
       </div>
       <div class="certi">
         <h1>
-          Certificate of Completing <span>javascript </span>issued by
-          <span style="color: rgb(254, 174, 26)">hackerrank</span>
+          Certificate of Completing
+          <span>Data analysis using python</span> program issued by
+          <span style="color: rgb(254, 174, 26)">IBM</span>
         </h1>
       </div>
       <div class="certi">
-        <img onclick="js()" src="JAVASCRIPT.jpg" />
+        <img onclick="dap()" src="Screenshot 2024-01-26 191648.png" />
       </div>
       <div class="certi">
         <img src="FRONT END.png" />
@@ -113,6 +128,15 @@
       <div class="certi">
         <img onclick="img()" src="css.png" />
       </div>
+      <div class="certi">
+        <img onclick="js()" src="JAVASCRIPT.jpg" />
+      </div>
+      <div class="certi">
+        <h1>
+          Certificate of Completing <span>javascript </span>issued by
+          <span style="color: rgb(254, 174, 26)">hackerrank</span>
+        </h1>
+      </div>
     </div>
     <script>
       function img() {
@@ -120,6 +144,11 @@
       }
       function js() {
         window.open("https://www.hackerrank.com/certificates/f0ddc0faffa3");
+      }
+      function dap() {
+        window.open(
+          "https://www.credly.com/badges/174b81ab-04c8-4689-959c-32575bbbbcb4"
+        );
       }
     </script>
   </body>
